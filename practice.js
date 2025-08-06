@@ -202,3 +202,91 @@ function reversed(number) {
 let reversedNum = reversed(615174);
 console.log(typeof reversedNum);
 */
+
+// Task - 16 > Sum of the even digits of a number inside a function
+/*
+function sumEvenDigits(num) {
+  let str = num.toString();
+  let sum = 0;
+  for (let i = 0; i < str.length; i++) {
+    let toNum = parseInt(str[i]);
+    if (toNum % 2 === 0) {
+      sum = sum + toNum;
+    }
+  }
+  return sum;
+}
+let result = sumEvenDigits(85685789832);
+console.log(result);
+*/
+// Task - 17 > Sum of the odd digits of a number inside a function
+/*
+function sumOddNum(num) {
+  let str = num.toString();
+  let sum = 0;
+  for (let i = 0; i < str.length; i++) {
+    let toNum = parseInt(str[i]);
+    if (toNum % 2 !== 0) {
+      sum += toNum;
+    }
+  }
+  return sum;
+}
+let result = sumOddNum(5984216895);
+console.log(result);*/
+
+// Task - 18 < Count the number of odd digits using function
+/*
+function countOddDigit(oddDigit) {
+  let count = 0;
+  let str = oddDigit.toString();
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] % 2 !== 0) {
+      count++;
+    }
+  }
+  return count;
+}
+let result = countOddDigit(9531893978);
+console.log(result);*/
+
+// Task - 19 < Count the number of even digits using function
+/*
+function countEvenDigit(evenDigit) {
+  let count = 0;
+  let str = evenDigit.toString();
+  for (let i = 0; i < str.length; i++) {
+    let digit = parseInt(str[i]);
+    if (digit % 2 === 0) {
+      count++;
+    }
+  }
+  return count;
+}
+let result = countEvenDigit(9167696824189);
+console.log(result);*/
+
+// Task - 20 > Palindrome or not
+/*
+function isPalindrome(number) {
+  let str = number.toString();
+  let reversed = str.split("").reverse().join("");
+  return str === reversed;
+}
+let result = isPalindrome(6452);
+console.log(result);*/
+
+// Task - 21 > Multiply all digits of a number
+/*
+function multiply(number) {
+  let str = number.toString();
+  let product = 1;
+  for (let i = 0; i < str.length; i++) {
+    let toNum = parseInt(str[i]);
+    product *= toNum;
+  }
+  return sum;
+}
+let result = multiply(844635);
+console.log(result);
+*/
